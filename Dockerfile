@@ -3,7 +3,7 @@ FROM alpine:3.6
 MAINTAINER Laurent RICHARD "easylo@gmail.com"
 
 RUN apk update && apk upgrade && \
-    apk add --no-cache supervisor coreutils git mysql-client libmcrypt libmcrypt-dev curl wget \
+    apk add --no-cache bash supervisor coreutils git mysql-client libmcrypt libmcrypt-dev curl wget \
     freetype-dev libpng-dev libjpeg-turbo-dev
 
 RUN apk add ca-certificates  curl ssmtp php7 php7-phar php7-curl \
